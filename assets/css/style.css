@@ -1,0 +1,57 @@
+:root {
+    --primary-color: orange;
+    --secondary-color: #024e76;
+    --tertiary-color: teal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* apply styles to <header> */
+header {
+    padding: 35px 50px;
+    background-color: var(--tertiary-color);
+  }
+
+  header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 0;
+    display: inline;
+  }
+  
+  header a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  header nav {
+    float: right;
+    margin: 7px 0;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 30px;
+  }
+
+  header nav ul li a:hover {
+    background-color: var(--primary-color);  
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+  }
