@@ -1,5 +1,5 @@
 :root {
-    --primary-color: orange;
+    --primary-color: black; 
     --secondary-color: #024e76;
     --tertiary-color: teal;
 }
@@ -18,24 +18,29 @@ body {
   /* apply styles to <header> */
 header {
     padding: 35px 50px;
-    background-color: var(--tertiary-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../images/portfolio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-shadow: 0 0 10px black;
   }
 
   header h1 {
     font-weight: bold;
     font-size: 40px;
-    color: var(--primary-color);
+    color: #fff;
     margin: 0;
-    display: inline;
   }
   
   header a {
-    color: var(--primary-color);
+    color: white;
     text-decoration: none;
   }
 
   header nav {
-    float: right;
     margin: 7px 0;
   }
 
@@ -44,14 +49,72 @@ header {
   }
 
   header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 30px;
+    margin: 0 40px;
+    font-weight: bold;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px black;
+    color: white;
   }
 
-  header nav ul li a:hover {
-    background-color: var(--primary-color);  
-    color: white;
-    border-radius: 15px;
-    text-shadow: none;
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  /* INTRODUCTION */
+  .hero {
+    background-image: url('../images/portfolio.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    font-size: 35px;
+    font-style: italic;
+    background-attachment: fixed;
+    position: relative;
+    text-shadow: 0 0 10px black
+  }
+
+  .hero-intro {
+    text-align: left;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.2;
+  }
+ 
+  /* ABOUT ME STYLE */
+
+  .intro {
+      text-align: center;
+  }
+
+
+  .intro h2 {
+      color: var(--primary-color);
+      font-size: 60px;
+      margin-bottom: 35px;
+      padding: 0 100px 20px 100px;
+      border-bottom: 3px solid;
+      border-color: var(--secondary-color);
+      display: inline-block;
+  }
+
+  .work h2 {
+    color: var(--primary-color);
+    width: 80%;
+    font-size: 35px;
+  }
+
+  .contact h2 {
+    color: var(--primary-color);
+    width: 80%;
+    font-size: 35px;
+  }
+
+  section {
+    padding: 60px;
   }
