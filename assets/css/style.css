@@ -92,6 +92,17 @@ header {
       text-align: center;
   }
 
+  .my-pic {
+    background-image: url('../images/mikey.JPG');
+    background-size: cover;
+    height: 600px;
+    border-radius: 15px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0 200px 0px 200px;
+    display: inline-block;
+  }
+
 
   .intro h2 {
       color: var(--primary-color);
@@ -101,18 +112,47 @@ header {
       border-bottom: 3px solid;
       border-color: var(--secondary-color);
       display: inline-block;
+      }
+
+  .intro p {
+      text-align: center;
+      margin: 3.5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .work {
+      text-align: center;
   }
 
   .work h2 {
     color: var(--primary-color);
-    width: 80%;
-    font-size: 35px;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: var(--primary-color);
+
+  }
+
+  .run-buddy {
+    background-position: center;
+  }
+
+  .contact-info {
+      text-align: center;
+      font-size: 25px;
+      color: var(--primary-color);
   }
 
   .contact h2 {
     color: var(--primary-color);
-    width: 80%;
-    font-size: 35px;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .contact h3 {
+      text-align: center;
+
   }
 
   section {
